@@ -14,14 +14,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Serviço</a></li>
                 <li><a href="#">Home</a></li>
+                <li><a href="#">Serviço</a></li>
                 <li><a href="#"><img src="img/logo.jpg" class="imageLogo"></a></li>
                 <li><a href="#">Local</a></li>
                 <li><a href="#">Contato</a></li>
@@ -29,28 +31,172 @@
         </nav>
     </header>
 
-<main>
-    <div class="bloco1">
+    <main>
+        <div class="bloco1">
 
-    </div>
+        </div>
 
-    <section class="servicos"> 
-        <h1 class="centerText">Serviços</h1> 
-       
-        <ol clas="mainServicos">
-            <li class="blocosServicos">t1</li>
-            <li class="blocosServicos">t2</li>
-            <li class="blocosServicos">t3</li>
-        </ol>
+        <section class="servicos"> 
+            <h1 class="centerText">Serviços</h1> 
+        
+            <div class="mainServicos">
+                <div class="blocosServicos">
+                    <h2>Roupas Delicadas</h2>
+                    <img src="img/icon-vestido.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore praesentium hic asperiores voluptatum ipsam explicabo quo nulla.</p>
+                </div>
+                <div class="blocosServicos">
+                    <h2>Roupas Coloridas</h2>
+                    <img src="img/icon-camisa.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore praesentium hic asperiores voluptatum ipsam explicabo quo nulla.</p>
+                </div>
+                <div class="blocosServicos">
+                    <h2>Roupas Pesadas</h2>
+                    <img src="img/icon-cobertas.png" alt="">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore praesentium hic asperiores voluptatum ipsam explicabo quo nulla.</p>
+                </div>
+            </div>
 
-    </section>
+        </section>
 
-    <div class="blocoMap">
-        <h1>Onde nos encontrar?</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15289.697507700299!2d-49.2467389!3d-16.655634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef321b537ad65%3A0x1a3bd046a4b754b0!2sNossa%20Bendita%20Lavanderia!5e0!3m2!1spt-BR!2sbr!4v1725754138372!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <section class="planos-mensais"> 
+            <h1 class="centerText">Planos Mensais</h1> 
 
-</main>
-    
+            <div class="main-planos-mensais">
+                <div class="blocos-planos">
+                    <h2>20 peças</h2>
+                    <ul>
+                        <li>Lavar</li>
+                        <li>Passar</li>
+                    </ul>
+                    <p>R$ 230,00</p>
+                    <button>Contratar</button>
+                </div>
+                <div class="blocos-planos">
+                    <h2>40 peças</h2>
+                    <ul>
+                        <li>Lavar</li>
+                        <li>Passar</li>
+                    </ul>
+                    <p>R$ 344,00</p>
+                    <button>Contratar</button>
+                </div>
+                <div class="blocos-planos">
+                    <h2>60 peças</h2>
+                    <ul>
+                        <li>Lavar</li>
+                        <li>Passar</li>
+                    </ul>
+                    <p>R$ 460,00</p>
+                    <button>Contratar</button>
+                </div>
+                <div class="blocos-planos">
+                    <h2>80 peças</h2>
+                    <ul>
+                        <li>Lavar</li>
+                        <li>Passar</li>
+                    </ul>
+                    <p>R$ 550,00</p>
+                    <button>Contratar</button>
+                </div>
+                <div class="blocos-planos">
+                    <h2>100 peças</h2>
+                    <ul>
+                        <li>Lavar</li>
+                        <li>Passar</li>
+                    </ul>
+                    <p>R$ 600,00</p>
+                    <button>Contratar</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="avaliacoes">
+            <div class="carrossel-header"> 
+                <h1>Depoimentos</h1>
+                <p>Veja o que nossos clientes dizem sobre nós</p>
+            </div>
+            <div class="carrossel-container">
+                <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+                <div class="carrossel">
+                    <div class="avaliacao">
+                        <div class="perfil">
+                            <img src="img/img-joaopedro.png" alt="Foto de João Pedro">
+                            <div class="info">
+                                <h3>João Pedro de Brito Tomé</h3>
+                                <p>Setembro 7, 2024</p>
+                            </div>
+                            <img src="img/google-logo.png" alt="Logo Google" class="logo-google">
+                        </div>
+                        <div class="estrelas">★★★★★</div>
+                        <p>Ótimo atendimento, levei meu terno para lavar e ele ficou impecável!</p>
+                    </div>
+                    <div class="avaliacao">
+                        <div class="perfil">
+                            <img src="avatar2.jpg" alt="Foto de Marcelo">
+                            <div class="info">
+                                <h3>Marcelo</h3>
+                                <p>Fevereiro 8, 2022</p>
+                            </div>
+                            <img src="img/google-logo.png" alt="Logo Google" class="logo-google">
+                        </div>
+                        <div class="estrelas">★★★★★</div>
+                        <p>Tem de tudo o que um shopping precisa ter e não cobra estacionamento.</p>
+                    </div>
+                    <div class="avaliacao">
+                        <div class="perfil">
+                            <img src="avatar2.jpg" alt="Foto de Marcelo">
+                            <div class="info">
+                                <h3>Marcelo</h3>
+                                <p>Fevereiro 8, 2022</p>
+                            </div>
+                            <img src="img/google-logo.png" alt="Logo Google" class="logo-google">
+                        </div>
+                        <div class="estrelas">★★★★★</div>
+                        <p>Tem de tudo o que um shopping precisa ter e não cobra estacionamento.</p>
+                    </div>
+                    <div class="avaliacao">
+                        <div class="perfil">
+                            <img src="avatar2.jpg" alt="Foto de Marcelo">
+                            <div class="info">
+                                <h3>Marcelo</h3>
+                                <p>Fevereiro 8, 2022</p>
+                            </div>
+                            <img src="img/google-logo.png" alt="Logo Google" class="logo-google">
+                        </div>
+                        <div class="estrelas">★★★★★</div>
+                        <p>Tem de tudo o que um shopping precisa ter e não cobra estacionamento.</p>
+                    </div>
+                    <!-- Adicione mais avaliações aqui -->
+                </div>
+                <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <div class="blocoMap">
+            <h1>Onde nos encontrar?</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15289.697507700299!2d-49.2467389!3d-16.655634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef321b537ad65%3A0x1a3bd046a4b754b0!2sNossa%20Bendita%20Lavanderia!5e0!3m2!1spt-BR!2sbr!4v1725754138372!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <img src="img/logo.jpg" alt="">
+        </div>
+        <div class="footer-redes">
+            <h2>Redes Sociais</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i> @instagram</a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i> @facebook</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Contatos</h2>
+            <p>(62) 3261-7909</p>
+            <p>benditalavanderiago@gmail.com</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
 </body>
 </html>
