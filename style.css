@@ -100,3 +100,10 @@ color: var(--tertiary-color);
     padding-bottom: 150px;
     border-radius: 30px;
 }
+.blocoMap{
+    text-align: center;
+    align-items: center;
+    font-family: "Sansita";
+    color: var(--primary-color);
+    padding: 30px;
+}
