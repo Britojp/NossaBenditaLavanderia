@@ -11,22 +11,22 @@
     box-sizing: border-box;
 }
 
-
-
 header{
-background-color: var(--primary-color);
-margin: 0;
-font-size: 25px; 
-color: var(--secondary-color);
-justify-content: space-between;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-align-items: center;
-transition: 0.7s;
-padding: 10px 100px;
+    background-color: var(--primary-color);
+    margin: 0;
+    font-size: 25px; 
+    color: var(--secondary-color);
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    transition: 0.7s;
+    padding: 10px 100px;
+    z-index: 11;
 }
+
 li{
     list-style-type: none;
     padding-left: 0;
@@ -40,14 +40,14 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  header nav ul li {
+}
+
+header nav ul li {
     position: relative;
     list-style: none;
-  }
-  
-  header nav ul li a {
+}
+
+header nav ul li a {
     position: relative;
     margin: 0 15px;
     text-decoration: none;
@@ -55,7 +55,7 @@ header nav ul {
     letter-spacing: 1px;
     font-weight: 700px;
     transition: 0.7s;
-  }
+}
 
 .imageLogo{
     width: 50px;
@@ -63,13 +63,16 @@ header nav ul {
     position: relative;
     transition: 0.7s;
 }
+
 a{
     color: var(--secondary-color);
     text-decoration: none;
-
-}a:hover{
-color: var(--tertiary-color);
 }
+
+a:hover{
+    color: var(--tertiary-color);
+}
+
 .bloco1{
     background-image: url("img/lavanderia-img.png"); 
     height: 600px; 
@@ -85,6 +88,7 @@ color: var(--tertiary-color);
     height: 550px; 
     display: block;
 }
+
 .centerText{
     text-align: center;
     color: white;
@@ -92,6 +96,7 @@ color: var(--tertiary-color);
     font-size: 48px;
     padding-bottom: 60px;
 }
+
 .blocosServicos{
     list-style: none;
     background-color: var(--tertiary-color);
@@ -100,10 +105,111 @@ color: var(--tertiary-color);
     padding-bottom: 150px;
     border-radius: 30px;
 }
+
 .blocoMap{
     text-align: center;
     align-items: center;
     font-family: "Sansita";
     color: var(--primary-color);
     padding: 30px;
+}
+
+/******************************/
+
+.carrossel-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+    font-size: 1.5em;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 auto 50px auto;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+
+.carrossel-header h1 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.avaliacao {
+    flex: 0 0 33.3333%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9e8e8;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.perfil img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: gray;
+}
+
+.logo-google {
+    margin-left: auto !important;
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.estrelas {
+    color: gold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
