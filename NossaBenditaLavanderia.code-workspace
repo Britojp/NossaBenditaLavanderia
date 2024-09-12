@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "NossaBenditaLavanderia",
+			"path": ".."
+		},
+		{
+			"name": "Caviar-Dreams",
+			"path": "../../../../../Downloads/Caviar-Dreams"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "NossaBenditaLavanderia"
+	}
+}

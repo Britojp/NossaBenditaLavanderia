@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lavanderia</title>
+    <title>BEM VINDO(A)! - NOSSA BENDITA LAVANDERIA</title>
     
     <link rel="stylesheet" href="style.css">
 
@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Serviço</a></li>
@@ -33,9 +33,14 @@
 
     <main>
         <div class="bloco1">
-
+            <div class="text-bg">
+                <h1>NOSSA BENDITA</h1>
+                <h2>LAVANDERIA</h2>
+            </div>
+            <img src="img/imagembg.png">
         </div>
 
+        <!-- Serviços -->
         <section class="servicos"> 
             <h1 class="centerText">Serviços</h1> 
         
@@ -58,7 +63,15 @@
             </div>
 
         </section>
+    
 
+        <!-- Planos -->
+         
+        <!--<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 150 1440 160">
+            <path fill="#00A4AE" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,202.7C384,203,480,213,576,229.3C672,245,768,267,864,256C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>-->
+
+        <svg class="wave" width="100%" height="100%" id="svg" viewBox="0 60 1440 220" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,100 C 71.83846153846156,115.45128205128205 143.67692307692312,130.9025641025641 223,126 C 302.3230769230769,121.09743589743589 389.13076923076926,95.84102564102564 463,97 C 536.8692307692307,98.15897435897436 597.8000000000001,125.73333333333332 690,135 C 782.1999999999999,144.26666666666668 905.6692307692308,135.22564102564104 987,121 C 1068.3307692307692,106.77435897435898 1107.523076923077,87.36410256410257 1176,83 C 1244.476923076923,78.63589743589743 1342.2384615384615,89.31794871794872 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#00a4ae" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,400 L 0,250 C 93.45384615384617,231.13846153846154 186.90769230769234,229.27692307692308 263,238 C 339.09230769230766,246.72307692307692 397.8230769230769,266.03076923076924 468,265 C 538.1769230769231,263.96923076923076 619.8000000000001,242.59999999999997 706,231 C 792.1999999999999,219.40000000000003 882.976923076923,217.56923076923076 961,230 C 1039.023076923077,242.43076923076924 1104.2923076923078,269.1230769230769 1182,272 C 1259.7076923076922,274.8769230769231 1349.853846153846,253.93846153846155 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#00a4ae" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
         <section class="planos-mensais"> 
             <h1 class="centerText">Planos Mensais</h1> 
 
@@ -112,6 +125,10 @@
 
         </section>
 
+        <!-- Planos Personalizados -->
+        <svg class="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 150 1440 160">
+            <path fill="#21C7D1" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,202.7C384,203,480,213,576,229.3C672,245,768,267,864,256C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
         <section class="plano-personalizado">
             <h2>Precisa de um plano personalizado?</h2>
             <h3>Clique no botão do nosso Whatsapp</h3>
@@ -185,6 +202,8 @@
             </div>
 
         </section>
+
+        <!-- Mapa -->
         <section class="sectionMap">
             <h1>Como nos encontrar</h1>
             <div id="blocoGeralMap">

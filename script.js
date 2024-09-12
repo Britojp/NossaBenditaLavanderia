@@ -11,3 +11,5 @@ function mudarSlide(n) {
 }
 
 document.addEventListener('DOMContentLoaded', () => mudarSlide(0));
+
+
