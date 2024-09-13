@@ -247,6 +247,28 @@ a:hover{
     color: white;
     transition: transform 0.3s ease;
 }
+
+.blocos-planos:nth-child(1) {
+    transform: translateY(40px);
+}
+
+.blocos-planos:nth-child(2) {
+    transform: translateY(20px);
+}
+
+.blocos-planos:nth-child(3) {
+    transform: translateY(0);
+}
+
+.blocos-planos:nth-child(4) {
+    transform: translateY(20px);
+}
+
+.blocos-planos:nth-child(5) {
+    transform: translateY(40px);
+}
+
+
 .blocos-planos h2{
     color: #dfdfdf
 }
