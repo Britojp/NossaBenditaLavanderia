@@ -499,8 +499,54 @@ a:hover{
 
 
 /*** FOOTER ***/
-
 footer {
+    background-color: var(--primary-color);
+    color: white;
+    height: 350px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+footer .footer-fale-conosco{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-fale-conosco p{
+    margin: 30px 0;
+}
+
+footer .footer-fale-conosco img{
+    width: 150px;
+    border-radius: 5px;
+}
+
+footer .footer-entre-em-contato{
+    width: 33%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+footer .footer-entre-em-contato p{
+    margin: 30px 0;
+}
+
+footer .footer-localizacao{
+    width: 33%;
+}
+
+footer .footer-localizacao iframe{
+    width: 380px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+/*footer {
     background-color: var(--primary-color);
     color: white;
     padding: 20px 150px;
@@ -521,4 +567,5 @@ footer div img{
 
 .footer-redes ul i{
     font-size: 25px;
-}
+}*/
+
