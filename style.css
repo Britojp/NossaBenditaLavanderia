@@ -18,6 +18,33 @@
     box-sizing: border-box;
 }
 
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--quaternary-color);
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+
+
+
 header{
     background-color: var(--primary-color);
     margin: 0;
@@ -169,8 +196,16 @@ a:hover{
     color: white;
     font-weight: normal;
     font-size: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
+.centerTexth2{
+    text-align: center;
+    color: var(--quaternary-color);
+    font-weight: normal;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
 
 .mainServicos{
     display: flex;
@@ -246,6 +281,7 @@ a:hover{
     padding: 40px 20px;
     color: white;
     transition: transform 0.3s ease;
+    font-size: 20px;
 }
 
 .blocos-planos:nth-child(1) {
@@ -493,7 +529,13 @@ a:hover{
     justify-content: flex-end; 
     text-align: left;
     padding: 20px;
+    text-align: justify;
+    
+}
+#blocoEndereco h2 {
+    color: #727272;
     text-align: center;
+
 }
 
 
