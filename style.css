@@ -12,28 +12,34 @@
 }
 
 *{
-    font-family: 'AbeeZee';
+    font-family: 'AbeeZee', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--primary-color);
+}
+
+.container {
+    max-width: 1400px; /* largura máxima do conteúdo */
+    margin: 0 auto; /* centraliza o contêiner */
+    padding: 0 5%; /* espaçamento interno para não tocar as bordas da tela */
+}
+
 header{
     background-color: var(--primary-color);
-    margin: 0;
-    font-size: 25px; 
     color: var(--secondary-color);
-    justify-content: space-between;
+    font-size: 25px; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    align-items: center;
     transition: 0.7s;
-    padding: 10px 100px;
-    z-index: 11;
+    padding: 10px 0;
+    z-index: 2;
 }
-
 
 header nav ul {
     position: relative;
@@ -62,6 +68,10 @@ header nav ul li a {
     transition: 0.7s;
 }
 
+header nav ul li a:hover{
+    color: var(--tertiary-color);
+}
+
 .imageLogo{
     background-color: white;
     width: 50px;
@@ -70,101 +80,41 @@ header nav ul li a {
     transition: 0.7s;
 }
 
-a{
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-a:hover{
-    color: var(--tertiary-color);
-}
-
-
 
 /*** BLOCO 1 ***/
 .bloco1 {
     background-color: var(--primary-color);
-    height: 700px; 
-    width: 100%;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    overflow: hidden;
 }
 
 .bloco1 img {
-    position: absolute;
-    z-index: 1; 
-    left: 35%;
-    width: auto; 
-    height: 90%;
+    width: 400px; 
 }
 
-.bloco1 h1, .bloco1 h2 {
-    position: absolute; 
-    z-index: 2;
-    text-align: center; 
-    color: var(--secondary-color);
-}
-
-.bloco1 h1 {
-    font-family: "ABeeZee", sans-serif;
-    font-size: 80px;
-    top: 35%; 
-    left: 8%;
+.bloco1 .text-bg h1 {
+    font-size: 60px;
     color: var(--secondary-color); 
 }
 
 .bloco1 h2 {
-    font-family: "ABeeZee", sans-serif;
-    font-size: 70px;
-    top: 45%; 
-    left: 23%;
-    color: var(--tertiary-color); 
+    font-size: 50px;
+    color: var(--tertiary-color);
+    text-align: end;
 }
 
-
-.wave1{
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: -2px;
-}
-
-.wave {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: -2px;
-    background: #00585D;
-}
-
-.wave2 {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: -2px;
-    background: #00A4AE;
-}
 
 /*** SERVIÇOS ***/
 .servicos{
     padding-top: 50px;
     background-color: #00585D;
     height: 550px;
-    width: 100%;
-    display: block;
+    width: 100vw;
 }
 
-.centerText{
+.servicos-title{
     text-align: center;
     color: white;
     font-weight: normal;
@@ -180,14 +130,14 @@ a:hover{
 
 .blocosServicos{
     width: 400px;
-    height: 280px;
+    height: 300px;
     border-radius: 7px;
     margin: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 20px 20px;
     color: white;
 }
 
@@ -202,7 +152,7 @@ a:hover{
 
 .blocosServicos img{
     width: 50px;
-    margin: 5px 0;
+    margin: 30px 0;
 }
 
 .blocosServicos p{
@@ -212,18 +162,30 @@ a:hover{
 
 /*** PLANOS MENSAIS ***/
 
+.wave {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -2px;
+    background: #00585D;
+}
+
 .planos-mensais{
     font-family: 'Sansita';
     font-weight: normal;
     background-color: var(--seventh-color);
-    height: 100%; 
     font-size: 1.5em;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    height: 500px;
+    padding-top: 70px;
 }
 
-.planos-mensais h1{
-    color: #ffffff;
+.planos-mensais .container h1{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 50px;
+    padding-bottom: 60px;
 }
 
 .main-planos-mensais{
@@ -268,9 +230,9 @@ a:hover{
     transform: translateY(40px);
 }
 
-
 .blocos-planos h2{
-    color: #dfdfdf
+    color: #dfdfdf;
+    flex-wrap: nowrap;
 }
     
 .blocos-planos:hover{
@@ -295,44 +257,46 @@ a:hover{
 .blocos-planos button:hover{
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
+
 /** PLANO PERSONALIZADO ***/
-.plano-personalizado{
+.wave2 {
+    display: block;
     width: 100%;
-    height: 70vh;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -2px;
+    background: #00A4AE;
+}
+
+.plano-personalizado{
     background-color: #21C7D1;
     display: flex;
     flex-direction: column;
     text-align: center;   
     align-items: center; 
+    height: 550px;
 }
 .contato-plano-personalizado{
     background-color: #00585D;
     height: 80px;
     width: 90px;
     border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: none;
 }
 .contato-plano-personalizado:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transform: scale(1.1);
-
 }
+
 .contato-plano-personalizado:active{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+
 .contato-plano-personalizado img{
     height: 50px;
     width: 50px;
-    display: flexbox;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    
 }
+
 .plano-personalizado h2{
     font-family: 'Sansita';
     color: #FFFFFF;
@@ -348,9 +312,7 @@ a:hover{
     
 }
 
-
 /*** AVALIAÇÕES ***/
-
 .avaliacoes {
     margin: 50px 0;
 }
@@ -373,7 +335,6 @@ a:hover{
     margin: 0 auto;
     /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
 }
-
 
 .carrossel-header h1 {
     margin: 0;
@@ -453,51 +414,6 @@ a:hover{
     right: 0;
 }
 
-/*** MAPA ***/
-
-.sectionMap {    
-    background-color: var(--quinternary-color);
-    display: flex;
-    flex-direction: column; 
-    font-family: "Sansita";
-    color: var(--secondary-color);
-    padding: 30px;
-    align-items: center;
-    font-family: 'Sansita';
-    font-size: 30px ;
-}
-
-.sectionMap h1 {
-    text-align: center; 
-    margin-bottom: 20px; 
-}
-
-#blocoGeralMap {
-    background-color: var(--sixth-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%; 
-    max-width: 1200px; 
-}
-
-#blocoMap {
-    display: flex;
-    flex: 1; 
-    justify-content: flex-start;
-    padding: 30px;
-}
-
-#blocoEndereco {
-    flex: 1; 
-    justify-content: flex-end; 
-    text-align: left;
-    padding: 20px;
-    text-align: center;
-}
-
-
-
 /*** FOOTER ***/
 footer {
     background-color: var(--primary-color);
@@ -546,26 +462,31 @@ footer .footer-localizacao iframe{
     margin: 30px 0;
 }
 
-/*footer {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 20px 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    header, footer, section {
+        padding: 20px; /* Mais espaçamento para elementos */
+    }
+
+    .bloco-servico, .bloco-plano {
+        width: auto; /* Blocos ocupam a largura total em dispositivos móveis */
+        margin: 10px 0; /* Mais margem entre blocos */
+    }
+
+    .texto {
+        font-size: 14px; /* Texto menor para melhor ajuste em telas pequenas */
+    }
+
+    img {
+        max-width: 100%; /* As imagens não devem extrapolar seu contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+    
+    h1, h2, h3 {
+        font-size: calc(16px + 1.5vw); /* Fonte escalável baseada no tamanho da tela */
+    }
 }
-
-footer div img{
-    width: 50px;
-    border-radius: 3px;
-}
-
-.footer-redes ul li{
-    margin: 15px 0;
-    list-style: none;
-}
-
-.footer-redes ul i{
-    font-size: 25px;
-}*/
-

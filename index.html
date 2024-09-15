@@ -20,29 +20,34 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviço</a></li>
-                <li><a href="#"><img src="img/logo.jpg" class="imageLogo"></a></li>
-                <li><a href="#">Local</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Serviço</a></li>
+                    <li><a href="#"><img src="img/logo.jpg" class="imageLogo"></a></li>
+                    <li><a href="#">Local</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="bloco1">
-            <div class="text-bg">
-                <h1>NOSSA BENDITA</h1>
-                <h2>LAVANDERIA</h2>
+        <div class="container">
+            <div class="bloco1">
+                <div class="text-bg">
+                    <h1>NOSSA BENDITA</h1>
+                    <h2>LAVANDERIA</h2>
+                </div>
+                <img src="img/imagembg.png">
             </div>
-            <img src="img/imagembg.png">
         </div>
 
         <!-- Serviços -->
-        <section class="servicos"> 
-            <h1 class="centerText">Serviços</h1> 
+        <section class="servicos">
+            <div class="container">
+                <h1 class="servicos-title">Serviços</h1> 
         
             <div class="mainServicos">
                 <div class="blocosServicos">
@@ -61,63 +66,63 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore praesentium hic asperiores voluptatum ipsam explicabo quo nulla.</p>
                 </div>
             </div>
+            </div>
 
         </section>
     
-
         <!-- Planos -->
         <svg class="wave" width="100%" height="100%" id="svg" viewBox="0 60 1440 220" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 L 0,100 C 71.83846153846156,115.45128205128205 143.67692307692312,130.9025641025641 223,126 C 302.3230769230769,121.09743589743589 389.13076923076926,95.84102564102564 463,97 C 536.8692307692307,98.15897435897436 597.8000000000001,125.73333333333332 690,135 C 782.1999999999999,144.26666666666668 905.6692307692308,135.22564102564104 987,121 C 1068.3307692307692,106.77435897435898 1107.523076923077,87.36410256410257 1176,83 C 1244.476923076923,78.63589743589743 1342.2384615384615,89.31794871794872 1440,100 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#00a4ae" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,400 L 0,250 C 93.45384615384617,231.13846153846154 186.90769230769234,229.27692307692308 263,238 C 339.09230769230766,246.72307692307692 397.8230769230769,266.03076923076924 468,265 C 538.1769230769231,263.96923076923076 619.8000000000001,242.59999999999997 706,231 C 792.1999999999999,219.40000000000003 882.976923076923,217.56923076923076 961,230 C 1039.023076923077,242.43076923076924 1104.2923076923078,269.1230769230769 1182,272 C 1259.7076923076922,274.8769230769231 1349.853846153846,253.93846153846155 1440,233 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="#00a4ae" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
         <section class="planos-mensais"> 
-            <h1 class="centerText">Planos Mensais</h1> 
-
-            <div class="main-planos-mensais">
-                <div class="blocos-planos">
-                    <h2>20 peças</h2>
-                    <ul>
-                        <li>Lavar</li>
-                        <li>Passar</li>
-                    </ul>
-                    <p>R$ 230,00</p>
-                    <button>Contratar</button>
-                </div>
-                <div class="blocos-planos">
-                    <h2>40 peças</h2>
-                    <ul>
-                        <li>Lavar</li>
-                        <li>Passar</li>
-                    </ul>
-                    <p>R$ 344,00</p>
-                    <button>Contratar</button>
-                </div>
-                <div class="blocos-planos">
-                    <h2>60 peças</h2>
-                    <ul>
-                        <li>Lavar</li>
-                        <li>Passar</li>
-                    </ul>
-                    <p>R$ 460,00</p>
-                    <button>Contratar</button>
-                </div>
-                <div class="blocos-planos">
-                    <h2>80 peças</h2>
-                    <ul>
-                        <li>Lavar</li>
-                        <li>Passar</li>
-                    </ul>
-                    <p>R$ 550,00</p>
-                    <button>Contratar</button>
-                </div>
-                <div class="blocos-planos">
-                    <h2>100 peças</h2>
-                    <ul>
-                        <li>Lavar</li>
-                        <li>Passar</li>
-                    </ul>
-                    <p>R$ 600,00</p>
-                    <button>Contratar</button>
+            <div class="container">
+                <h1 class="centerText">Planos Mensais</h1> 
+                <div class="main-planos-mensais">
+                    <div class="blocos-planos">
+                        <h2>20 peças</h2>
+                        <ul>
+                            <li>Lavar</li>
+                            <li>Passar</li>
+                        </ul>
+                        <p>R$ 230,00</p>
+                        <button>Contratar</button>
+                    </div>
+                    <div class="blocos-planos">
+                        <h2>40 peças</h2>
+                        <ul>
+                            <li>Lavar</li>
+                            <li>Passar</li>
+                        </ul>
+                        <p>R$ 344,00</p>
+                        <button>Contratar</button>
+                    </div>
+                    <div class="blocos-planos">
+                        <h2>60 peças</h2>
+                        <ul>
+                            <li>Lavar</li>
+                            <li>Passar</li>
+                        </ul>
+                        <p>R$ 460,00</p>
+                        <button>Contratar</button>
+                    </div>
+                    <div class="blocos-planos">
+                        <h2>80 peças</h2>
+                        <ul>
+                            <li>Lavar</li>
+                            <li>Passar</li>
+                        </ul>
+                        <p>R$ 550,00</p>
+                        <button>Contratar</button>
+                    </div>
+                    <div class="blocos-planos">
+                        <h2>100 peças</h2>
+                        <ul>
+                            <li>Lavar</li>
+                            <li>Passar</li>
+                        </ul>
+                        <p>R$ 600,00</p>
+                        <button>Contratar</button>
+                    </div>
                 </div>
             </div>
-
         </section>
 
         <!-- Planos Personalizados -->
@@ -125,71 +130,35 @@
             <path fill="#21C7D1" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,202.7C384,203,480,213,576,229.3C672,245,768,267,864,256C960,245,1056,203,1152,197.3C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
         <section class="plano-personalizado">
-            <h2>Precisa de um plano personalizado?</h2>
-            <h3>Clique no botão do nosso Whatsapp</h3>
-            <button class="contato-plano-personalizado">
-              <img src="img/whatsapp.png">
-              <a href=""></a>
-            </button>
-        </section>
-
-        <!-- Mapa -->
-        <!--<section class="sectionMap">
-            <h1>Como nos encontrar</h1>
-            <div id="blocoGeralMap">
-                <div id="blocoMap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15289.697507700299!2d-49.2467389!3d-16.655634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef321b537ad65%3A0x1a3bd046a4b754b0!2sNossa%20Bendita%20Lavanderia!5e0!3m2!1spt-BR!2sbr!4v1725754138372!5m2!1spt-BR!2sbr" width="600" height="400" style="border:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-        
-                <div id="blocoEndereco">
-                    <h2>Endereço</h2>
-                    <p>Rua Maria Alice, Qd 5 Lt 16 N˚36 Casa 1.</p>
-                    <p>Setor Negrão de Lima - Goiânia - GO</p>
-                    <p>CEP: 74650-180</p>
-                    <br>
-                    <p>Telefone: (62) 3261-7909</p>
-                    <p>Whatsapp: (62) 3201-8212</p>
-                    <p>E-mail: benditalavanderiago@gmail.com</p>
-
-                </div>
+            <div class="container">
+                <h2>Precisa de um plano personalizado?</h2>
+                <h3>Clique no botão do nosso Whatsapp</h3>
+                <button class="contato-plano-personalizado">
+                    <img src="img/whatsapp.png">
+                    <a href=""></a>
+                </button>
             </div>
-        </section>-->
-        
+        </section>
     </main>
-
-    <!--<footer>
-        <div>
-            <img src="img/logo.jpg" alt="">
-        </div>
-        <div class="footer-redes">
-            <h2>Redes Sociais</h2>
-            <ul>
-                <li><a href="https://www.instagram.com/nbenditalavanderia/"><i class="fa fa-instagram"></i> @nbenditalavanderia</a></li>
-                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i> @facebook</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>Contatos</h2>
-            <p>(62) 98513-1558</p>
-            <p>benditalavanderiago@gmail.com</p>
-        </div>
-    </footer>-->
-    <footer>
-        <div class="footer-fale-conosco">
-            <h2>Fale Conosco</h2>
-            <p>Nosso horário de funcionamento é de segunda a sexta, das 8:00 às 19:00, e aos sábados, das 8:00 às 13:00</p>
-            <img src="img/logo escolhida.png" alt="">
-        </div>
-        <div class="footer-entre-em-contato">
-            <h2>Entre em contato</h2>
-            <p><a><i class="fa fa-whatsapp"></i> (62) 3261-7909</a></p>
-            <a href="https://www.instagram.com/nbenditalavanderia/"><i class="fa fa-instagram"></i> @nbenditalavanderia</a>
-        </div>
-        <div class="footer-localizacao">
-            <h2>Localização</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15289.697507700299!2d-49.2467389!3d-16.655634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef321b537ad65%3A0x1a3bd046a4b754b0!2sNossa%20Bendita%20Lavanderia!5e0!3m2!1spt-BR!2sbr!4v1725754138372!5m2!1spt-BR!2sbr" style="border:80px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </footer>
+    
+    <div class="container">
+        <footer>
+            <div class="footer-fale-conosco">
+                <h2>Fale Conosco</h2>
+                <p>Nosso horário de funcionamento é de segunda a sexta, das 8:00 às 19:00, e aos sábados, das 8:00 às 13:00</p>
+                <img src="img/logo escolhida.png" alt="">
+            </div>
+            <div class="footer-entre-em-contato">
+                <h2>Entre em contato</h2>
+                <p><a><i class="fa fa-whatsapp"></i> (62) 3261-7909</a></p>
+                <a href="https://www.instagram.com/nbenditalavanderia/"><i class="fa fa-instagram"></i> @nbenditalavanderia</a>
+            </div>
+            <div class="footer-localizacao">
+                <h2>Localização</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15289.697507700299!2d-49.2467389!3d-16.655634!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef321b537ad65%3A0x1a3bd046a4b754b0!2sNossa%20Bendita%20Lavanderia!5e0!3m2!1spt-BR!2sbr!4v1725754138372!5m2!1spt-BR!2sbr" style="border:80px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+    </div>
 <script src="script.js"></script>
 </body>
 </html>
