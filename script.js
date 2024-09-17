@@ -13,3 +13,12 @@ function mudarSlide(n) {
 document.addEventListener('DOMContentLoaded', () => mudarSlide(0));
 
 
+let ul = document.querySelector('nav ul');
+
+function openMenu(){
+    ul.classList.add('open');
+}
+
+function closeMenu(){
+    ul.classList.remove('open');
+}

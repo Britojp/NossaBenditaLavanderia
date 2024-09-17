@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 
 :root {
-    --primary-color: #00A4AE;
+    --primary-color: #22e4ee;
     --secondary-color: #FFFFFF;
     --tertiary-color: #ffb360;
     --quaternary-color: #00585D;
@@ -18,8 +18,15 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body{
-    background-color: var(--primary-color);
+    /*background-color: var(--secondary-color);*/
+    background: #f7f7f7;
 }
 
 .container {
@@ -29,37 +36,32 @@ body{
 }
 
 header{
-    background-color: var(--primary-color);
+    background-color: var(--quaternary-color);
     color: var(--secondary-color);
     font-size: 25px; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    transition: 0.7s;
-    padding: 10px 0;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    transition: 0.7s;
 }
 
 header nav ul {
-    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 header nav ul li {
-    position: relative;
     list-style: none;
     list-style-type: none;
-    padding-left: 0;
     margin: 0 15px;
-    display: inline;
     font-weight: bold;
 }
 
 header nav ul li a {
-    position: relative;
     margin: 0 15px;
     text-decoration: none;
     color: white;
@@ -80,10 +82,68 @@ header nav ul li a:hover{
     transition: 0.7s;
 }
 
+/*** MENU RESPONSIVO ***/
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+nav .close-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+@media(max-width: 830px){
+    /* menu mobile */
+    header .container{
+        margin: 10px 20px;
+        text-align: right;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--primary-color);
+        width: 100%;
+        height: 100%;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+    }
+    ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+    ul li a{
+        margin: 10px 0;
+        font-size: 30px;
+    }
+    nav .menu-icon{
+        display: block;
+
+    }
+
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+    nav ul li a img{
+        display: none;
+    }
+}
 
 /*** BLOCO 1 ***/
-.bloco1 {
-    background-color: var(--primary-color);
+.bloco1{
+    background: var(--quaternary-color);
+}
+
+.bloco1 .container{
     min-height: 550px;
     display: flex;
     justify-content: center;
@@ -91,12 +151,14 @@ header nav ul li a:hover{
 }
 
 .bloco1 img {
-    width: 400px; 
+    width: 400px;
+    margin-top: 80px;
 }
 
 .bloco1 .text-bg h1 {
     font-size: 60px;
     color: var(--secondary-color); 
+    white-space: nowrap;
 }
 
 .bloco1 h2 {
@@ -105,18 +167,69 @@ header nav ul li a:hover{
     text-align: end;
 }
 
+.bloco1 .wave{
+    margin-bottom: -20px;
+}
+
+.bloco1 .wave1{
+    animation: moveWave1 6s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave1 {
+    from{
+        transform: translateX(-200px);
+    }
+}
+
+.bloco1 .wave2{
+    animation: moveWave2 5s 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave2 {
+    from{
+        transform: translateX(-180px);
+    }
+}
+
+.bloco1 .wave3{
+    animation: moveWave3 4s 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes moveWave3 {
+    from{
+        transform: translateX(-120px);
+    }
+}
+
+@media (max-width: 800px) {
+    .bloco1 .container {
+        flex-direction: column;
+    }
+    .bloco1 .text-bg h1 {
+        margin-top: 60px;
+        font-size: 40px;
+        white-space: nowrap;
+    }
+    .bloco1 h2 {
+        font-size: 35px;
+    }
+
+    .bloco1 img {
+        width: 300px; 
+    }
+}
+
 
 /*** SERVIÇOS ***/
 .servicos{
-    padding-top: 50px;
-    background-color: #00585D;
+    padding: 50px 0;
     height: 550px;
     width: 100vw;
 }
 
 .servicos-title{
     text-align: center;
-    color: white;
+    color: var(--quaternary-color);
     font-weight: normal;
     font-size: 50px;
     padding-bottom: 60px;
@@ -138,16 +251,17 @@ header nav ul li a:hover{
     align-items: center;
     flex-direction: column;
     padding: 20px 20px;
-    color: white;
+    color: var(--quaternary-color);
 }
 
 .blocosServicos:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px #00585D33;
 }
 
 .blocosServicos h2{
     font-size: 35px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .blocosServicos img{
@@ -162,27 +276,19 @@ header nav ul li a:hover{
 
 /*** PLANOS MENSAIS ***/
 
-.wave {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: -2px;
-    background: #00585D;
-}
 
 .planos-mensais{
     font-family: 'Sansita';
     font-weight: normal;
-    background-color: var(--seventh-color);
+    /*background-color: var(--secondary-color);*/
     font-size: 1.5em;
-    height: 500px;
-    padding-top: 70px;
+    padding: 50px 0;
+    height: 550px;
 }
 
 .planos-mensais .container h1{
     text-align: center;
-    color: white;
+    color: var(--quaternary-color);
     font-weight: normal;
     font-size: 50px;
     padding-bottom: 60px;
@@ -259,23 +365,20 @@ header nav ul li a:hover{
 }
 
 /** PLANO PERSONALIZADO ***/
-.wave2 {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: -2px;
-    background: #00A4AE;
-}
 
 .plano-personalizado{
-    background-color: #21C7D1;
     display: flex;
     flex-direction: column;
     text-align: center;   
     align-items: center; 
+    padding: 50px 0;
     height: 550px;
 }
+
+.plano-personalizado .container{
+    height: 100%;
+}
+
 .contato-plano-personalizado{
     background-color: #00585D;
     height: 80px;
@@ -299,7 +402,7 @@ header nav ul li a:hover{
 
 .plano-personalizado h2{
     font-family: 'Sansita';
-    color: #FFFFFF;
+    color: var(--quaternary-color);
     padding-bottom: 20px;
     padding-top: 100px;
     font-size: 50px;
@@ -416,10 +519,13 @@ header nav ul li a:hover{
 
 /*** FOOTER ***/
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--quaternary-color);
+}
+
+footer .container{
     color: white;
     height: 350px;
-    padding: 50px 100px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: start;
@@ -430,10 +536,12 @@ footer .footer-fale-conosco{
     height: 100%;
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
 }
 
 footer .footer-fale-conosco p{
     margin: 30px 0;
+    margin-right: 30px;
 }
 
 footer .footer-fale-conosco img{
@@ -444,15 +552,22 @@ footer .footer-fale-conosco img{
 footer .footer-entre-em-contato{
     width: 33%;
     height: 100%;
-    margin-left: 20px;
+    padding-top: 50px;
+    padding-left: 40px;
 }
 
 footer .footer-entre-em-contato p{
     margin: 30px 0;
 }
 
+footer .footer-entre-em-contato a{
+    text-decoration: none;
+    color: white;
+}
+
 footer .footer-localizacao{
     width: 33%;
+    padding-top: 50px;
 }
 
 footer .footer-localizacao iframe{
@@ -462,31 +577,59 @@ footer .footer-localizacao iframe{
     margin: 30px 0;
 }
 
+footer>p{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .servico-item, .plano {
+        margin: 10px;
+        padding: 10px;
+    }
+
     .container {
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
-    header, footer, section {
-        padding: 20px; /* Mais espaçamento para elementos */
+    .servicos{
+        height: auto;
     }
-
-    .bloco-servico, .bloco-plano {
-        width: auto; /* Blocos ocupam a largura total em dispositivos móveis */
-        margin: 10px 0; /* Mais margem entre blocos */
+    .mainServicos{
+        flex-direction: column;
     }
-
-    .texto {
-        font-size: 14px; /* Texto menor para melhor ajuste em telas pequenas */
-    }
-
-    img {
-        max-width: 100%; /* As imagens não devem extrapolar seu contêiner */
-        height: auto; /* Mantém a proporção da imagem */
-    }
-    
-    h1, h2, h3 {
-        font-size: calc(16px + 1.5vw); /* Fonte escalável baseada no tamanho da tela */
+    .blocosServicos h2{
+        font-size: 20px;
+        white-space: nowrap;
     }
 }
+
+/* Estiliza a largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Estiliza o "track" (fundo da barra de rolagem) */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border: none;
+  }
+  
+  /* Estiliza o "thumb" (a parte que se move na barra de rolagem) */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* Cor da barra */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; /* Adiciona uma borda ao thumb */
+  }
+  
+  /* Estiliza o thumb ao ser hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--quaternary-color);
+  }
