@@ -22,3 +22,24 @@ function openMenu(){
 function closeMenu(){
     ul.classList.remove('open');
 }
+
+
+//FUNÇÃO PARA O BOTÃO DE LEVAR AO TOPO
+const btn = document.getElementById('scrollToTopBtn');
+
+function toggleButtonVisibility() {
+    if (window.scrollY > 100) {
+        btn.classList.remove('hidden');
+    } else {
+        btn.classList.add('hidden');
+    }
+}
+
+window.addEventListener('scroll', toggleButtonVisibility);
+
+btn.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+toggleButtonVisibility();
