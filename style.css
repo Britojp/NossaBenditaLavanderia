@@ -145,7 +145,7 @@ nav .close-icon {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: var(--primary-color);
+        background-color: var(--quaternary-color);
         width: 100%;
         height: 100%;
         flex-direction:column;
@@ -173,7 +173,7 @@ nav .close-icon {
         top: 46px;
         right: 28px;
     }
-    nav ul li a img{
+    nav ul li:nth-child(3){
         display: none;
     }
 }
@@ -279,6 +279,7 @@ nav .close-icon {
     align-items: center;
     width: 100%;
 }
+
 .row-servico{
     display: flex;
     flex-direction: row;
@@ -311,6 +312,20 @@ nav .close-icon {
     font-size: 18px;
     text-align: center;
     font-weight: normal;
+}
+
+
+@media (max-width: 800px) {
+    .mainServicos {
+        display: block;
+    }
+
+    .row-servico {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /*** PLANOS MENSAIS ***/
@@ -429,6 +444,13 @@ article:has(:hover, :focus) h2{
     article {
         container: card/inline-size;
     }
+
+    .article-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
     .article-body p {
         display: none;
     }
@@ -522,7 +544,6 @@ article:has(:hover, :focus) h2{
     background-image: url('img/sobre-nos/colagem.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -565,6 +586,16 @@ article:has(:hover, :focus) h2{
 .bloco-aboutUs-esquerda img {
     max-width: 100%;
     height: auto;
+}
+
+@media (max-width: 800px) {
+    .bloco-aboutUs{
+        display: flex;
+        flex-direction: column;
+    }
+    .bloco-aboutUs-esquerda img {
+        width: 300px;
+    }
 }
 
 
@@ -677,7 +708,6 @@ footer {
 
 footer .container{
     color: white;
-    height: 350px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -738,6 +768,30 @@ footer>p{
 }
 footer p:hover{
     color:var(--tertiary-color);
+}
+
+
+@media (max-width: 800px) {
+    footer #contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer .footer-fale-conosco p{
+        margin-right: 0;
+    }
+
+    footer .footer-fale-conosco img{
+        display: none;
+    }
+
+    footer .footer-fale-conosco, footer .footer-entre-em-contato, footer .footer-localizacao{
+        width: 100%;
+        padding: 0;
+        padding-top: 50px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 800px) {
